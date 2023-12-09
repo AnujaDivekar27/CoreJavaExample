@@ -22,7 +22,9 @@ public class ExcetionDemo1 {
 		
 		try 
 		{  
-			System.out.println(10/0);	 //ArithmaticException->runtime exception occur
+			System.out.println("statement2");
+			System.out.println(10/0); //ArithmaticException->runtime exception occur
+			System.out.println("statement3");
 		}
 		 
 		catch(Exception e)
@@ -31,16 +33,25 @@ public class ExcetionDemo1 {
 		}
 		
 		System.out.println("statement3");
+	
 		
 		//***********************************************************************************
 		
 		/*statement1
-		java.lang.ArithmeticException: / by zero
-		statement3
+		  statement2
+		  
+		  exception occur at sop(10/0)-> line after sop(10/0) never print
+		  
+		  java.lang.ArithmeticException: / by zero
+		
+		  statement3
 		*/
        
 		//due to try-catch block prog normal flow not terminate abnormally
 		
+	   //************************************************************************************
+	
+	
 	}
 }
 
