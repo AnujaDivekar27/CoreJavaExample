@@ -1,5 +1,7 @@
 package com.example;
 
+//CheckedException->class that inherit Exception class nd not inherit RuntimeException 
+
 class AgeException extends Exception
 {
 	AgeException()
@@ -12,6 +14,7 @@ class AgeException extends Exception
     }
 	
 }
+
 public class CheckedCustomException {
 
   public static void main(String[] args) throws AgeException {
@@ -34,6 +37,7 @@ public class CheckedCustomException {
   /*you are under age
     Exception in thread "main" com.example.AgeException
 	at com.example.CustomDemo.main(CustomDemo.java:23)*/
-//In case of checked exception you need to write try-catch block compulsary 
-//or write throws keyword after method which throw exception otherwise prog wont compile
+
+  //In case of checked exception you need to write try-catch block compulsory 
+  //or write throws keyword after method which throw exception otherwise pro wont compile
 //*****************************************************************************************
